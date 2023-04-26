@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/fav.ico">
+    <title>Challenge #1 - ONE</title>
+</head>
+<body class="fade-in">
+
+    <div class="loading">
+		<div class="loader"></div>
+	</div>
+
+    <main class="main">
+        <div class="logo">
+            <img src="imgs/Logo@2x.png">
+        </div>
+        <section class="section_container">
+            <div class="btn-entrada">
+                <div class="input_container">
+                    <textarea name="" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="alerta">
+                    <img src="imgs/diamod.png" alt="">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="botones">
+                    <button class="btn_encriptar" id="btn_encriptar">Encriptar</button>
+                    <button class="btn_desencriptar" id="btn_desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="resultado" id="resultado">
+            <div class="encr_container" id="encr_container">
+                <p class="worked_text" id="worked_text"></p>
+            </div>
+            <div class="disappear_container" id="hide_container">
+                <div class="img_container">
+                    <img src="imgs/Muñeco.png" alt="">
+                </div>
+                <div class="text_container">
+                    <h1>No se encrontro mensaje a modificar</h1>
+                    <p>Ingrese texto a modificar</p>
+                </div>
+            </div>
+            <div class="copy_container" id="copy_container">
+                <button class="btn_copiar" id="btn_copiar">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+<script>
+    window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
+    });
+</script>
+<script src="encriptador.js"></script>
+
+</html>
